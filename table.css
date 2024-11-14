@@ -1,0 +1,71 @@
+body {
+   
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 1000px;
+    background-color: rgba(127, 115, 115, 0.8);
+}
+
+table,
+td,
+th {
+    border: 1px solid #333;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 6px 10px;
+}
+
+table thead th {
+    text-align: left;
+}
+
+.table.table-hover tbody tr:hover {
+    background: #333;
+}
+
+table thead th:first-child {
+    width: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+    right: 150px;
+}
+
+#container button {
+    padding: 15px 25px;
+    font-size: 18px;
+    width: 100px;       /* Chiều rộng của nút */
+    height: 50px;
+}
+
+input {
+    width: 100%;            /* Đặt độ rộng của input bằng 100% chiều rộng của ô chứa */
+    border: none;           /* Ẩn viền của input */
+    outline: none;          /* Ẩn viền khi input được chọn */
+    background: transparent; /* Làm nền trong suốt */
+    padding: 5px;          /* Thêm khoảng cách bên trong cho đẹp mắt (tùy chọn) */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
+}
+
+tr.active {
+    background-color: #333;
+}
+body{
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
