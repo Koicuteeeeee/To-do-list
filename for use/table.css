@@ -25,8 +25,8 @@ table thead th {
     text-align: left;
 }
 
-.table.table-hover tbody tr:hover {
-    background: #333;
+.table.table-hover tbody tr:hover:not(:focus) {
+    background: white;
 }
 
 table thead th:first-child {
@@ -48,6 +48,7 @@ table thead th:first-child {
     font-size: 18px;
     width: 100px;       /* Chiều rộng của nút */
     height: 50px;
+    border-radius: 20px; 
 }
 
 input {
@@ -59,9 +60,7 @@ input {
     box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
 }
 
-tr.active {
-    background-color: #333;
-}
+
 body{
     background-image: url(1.jpg);
     background-repeat: no-repeat;
@@ -69,3 +68,36 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+tr:focus-within { 
+    background-color: white; 
+  }
+  #container button:hover {
+    background-color: rgb(214, 214, 214); /* Đổi màu nền khi hover */
+    color: rgb(0, 0, 0); /* Đổi màu chữ khi hover */
+  }
+  .content .btn {
+    display: inline-block;
+    padding: 10px 20px; /* Điều chỉnh padding để thay đổi kích thước nút */
+    background-color: #4CAF50; /* Màu nền mặc định */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bo góc cạnh */
+    text-decoration: none;
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển đổi mượt mà */
+  }
+  
+  .content .btn:hover {
+    background-color: #3e8e41; /* Màu nền khi hover */
+    cursor: pointer; /* Thay đổi con trỏ chuột khi hover */
+  } 
+  .content {
+    position: fixed; /* Giữ nút cố định khi cuộn trang */
+    top: 13px; /* Khoảng cách từ nút đến mép trên */
+    right: 10px; /* Khoảng cách từ nút đến mép phải */
+  }
+  .content h2 {
+    position: fixed; /* Giữ nút cố định khi cuộn trang */
+    top: 0px; /* Khoảng cách từ nút đến mép trên */
+    right: 125px;
+    color: white; /* Khoảng cách từ nút đến mép phải */
+  }
